@@ -1,15 +1,12 @@
-######
-# Training logictic regression classifier on data
-######
+####
+# Main script for Assignment 2
+####
 
 # Importing packages
 # System tools
 import os
 import sys
 sys.path.append("..")
-
-# Machine learning stuff
-from sklearn import metrics
 
 # Cutom/local functions
 from data_processing import split_vectorizer_fit, load_data

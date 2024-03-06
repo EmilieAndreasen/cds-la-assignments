@@ -15,7 +15,7 @@ For this exercise, you should write two different notebooks. One should train a 
 
 ## Technicalities
 
-For this assignment, two standard Python packages/modules are needed (i.e., 'os' and 're') along with 'pandas' and 'spaCy'.
+For this assignment, it is necessary to pip install the modules specified in the requirements.txt file.
 
 ## Folder structure
 
@@ -26,11 +26,7 @@ The folders are structured as follows:
 | ```in```  | Contains the data used for assignment 2 |
 | ```models```  | Contains the outputted models |
 | ```out```| Contains all the outputted csv files |
-| ```src```  | Contains the Python scripts used for assignment 2 |
+| ```src```  | Contains the Python scripts used for assignment 2, where main.py is the main script |
 
 ## References
-Honnibal, M., & Montani, I. (2017). spaCy 2: Natural language understanding with Bloom embeddings, convolutional neural networks and incremental parsing.
-
-McKinney, W., & others. (2010). Data structures for statistical computing in python. In Proceedings of the 9th Python in Science Conference (Vol. 445, pp. 51–56).
-
 Van Rossum, G., & Drake, F. L. (2009). Python 3 Reference Manual. Scotts Valley, CA: CreateSpace.

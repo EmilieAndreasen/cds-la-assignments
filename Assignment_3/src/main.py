@@ -48,10 +48,10 @@ def calc_artist_query_perc(df, artist, query_words):
     Returns:
         The percentage of songs by the artist that contain any of the query words.
     """
-    # Filtering to only have the songs by the specified artist in 'artist_songs'.
+    # Filtering to only have the songs by the specified artist in 'artist_songs'
     artist_songs = df[df['artist'].str.lower() == artist.lower()]
 
-    # Filtering to only have the rows where the lambda function returns True.
+    # Filtering to only have the rows where the lambda function returns True
     relevant_songs = artist_songs[artist_songs['text'].apply(lambda lyrics: any(word in lyrics for word in query_words))]
     
     if artist_songs.shape[0] > 0:

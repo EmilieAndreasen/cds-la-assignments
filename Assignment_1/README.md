@@ -110,7 +110,7 @@ The outputs for two of the CSV files are presented below to illustrate what the 
 | 0238.b6.txt | 1522.12      | 1557.52      | 884.96      | 460.18      | 2          | 0          | 0          |
 | 0318.b6.txt | 2057.47      | 1149.43      | 1000.00     | 528.74      | 5          | 0          | 2          |  
 
-The text files from the 'Taboo, not taboo' essay type display variation in relative frequencies of nouns, verbs, adjectives, and adverbs, along with counts of unique named entities. For instance, 0137.b6.txt has a high relative frequency of nouns (i.e, 1937.87) and verbs (i.e., 1390.53), while 0318.b6.txt has the highest noun frequency (i.e., 2057.47) and identifies 5 unique persons.
+The text files from the 'Taboo, not taboo' display variation in relative frequencies of nouns, verbs, adjectives, and adverbs, along with counts of unique named entities. For instance, 0137.b6.txt has a high relative frequency of nouns (i.e, 1937.87) and verbs (i.e., 1390.53), while 0318.b6.txt has the highest noun frequency (i.e., 2057.47) and identifies 5 unique persons.
 
 **C1 Linguistic Features**  
 | Filename    | RelFreq NOUN | RelFreq VERB | RelFreq ADJ | RelFreq ADV | Unique PER | Unique LOC | Unique ORG |
@@ -123,7 +123,7 @@ The text files from the 'Taboo, not taboo' essay type display variation in relat
 | 0501.c1.txt | 1474.46      | 1227.35      | 551.89      | 510.71      | 14         | 0          | 5          |
 | 0502.c1.txt | 1581.36      | 1459.13      | 519.48      | 488.92      | 15         |  0          | 5          |
   
-In this CSV, 0140.c1.txt stands out with a high number of unique persons, namely 38, and a substantial relative frequency of nouns (i.e., 1865.64).  
+In this CSV, there are also several variations present for the linguistic features. 0140.c1.txt stands out with a high number of unique persons, namely 38, and a substantial relative frequency of nouns (i.e., 1865.64).  
 
 Overall, the CSV files do not provide great/deep insights on their own, but the extracted linguistic information does allow for a solid starting point for further future analyses. 
 

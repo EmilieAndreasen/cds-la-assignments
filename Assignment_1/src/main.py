@@ -16,7 +16,7 @@ from codecarbon import EmissionsTracker
 def parse_arguments():
     parser = argparse.ArgumentParser(description='Extract linguistic features from text files.')
     parser.add_argument('--dataset_path', type=str, required=True, help='Path to the dataset directory containing sub-folders with text files')
-    parser.add_argument('--output_dir', type=str, default='../out', help='Output directory for the resulting CSV files')
+    parser.add_argument('--output_dir', type=str, default='../out', help='Output directory for the resulting CSV files and emission files')
     return parser.parse_args()
 
 # Loading spacy
@@ -96,11 +96,10 @@ def main():
 
         results = []
 
-        # Emissions tracker
-        tracker = EmissionsTracker(project_name=f"emissions_{directory}", 
-                                   experiment_id=f"emissions_{directory}",
-                                   output_dir=os.path.join(output_path),
-                                   output_file=f"emissions.csv")
+        tracker = EmissionsTracker(project_name="linguistic_feature_analysis", 
+            experiment_id="spacy_linguistic_extraction",
+            output_dir=os.path.join(output_path),
+            output_file="emissions.csv")
         tracker.start()
 
         for text_file in filenames:
@@ -111,7 +110,6 @@ def main():
         df.to_csv(os.path.join(output_path, f"{directory}_linguistic_features.csv"), index=False)
         print(f"Linguistic feature extraction completed. Results are saved in {output_path}")
 
-        # Stop tracking emissions for the assignment
         tracker.stop()
 
 if __name__ == "__main__":

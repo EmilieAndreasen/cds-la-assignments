@@ -1,0 +1,5 @@
+pandas
+matplotlib
+tensorflow
+tf-keras
+transformers

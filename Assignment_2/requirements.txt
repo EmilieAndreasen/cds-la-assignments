@@ -1,4 +1,5 @@
-scikit-learn
-pandas
-numpy
-joblib
+joblib==1.4.2
+pandas==2.2.2
+scikit_learn==1.4.2
+codecarbon==2.4.1
+setuptools==70.0.0

@@ -49,3 +49,6 @@ Despite this, the plots show that there are also occurances of other emotions. O
 While these three emotions, along with the 'neutral' one, are consistently shown as the top four, the last three emotions do shift around from season to season. This can be seen in the plot showing the emotional content season by season. Such changes could correlate to the different plot events and tone setting for each season.
 
 All in all, this analysis indicates that 'Game of Thrones' stays quite consistent in the conveyed emotional profile across seasons. Although it should be noted that the model's predictions are limited to the textual data and lack the nuances and "depth" of human context recognition.  
+
+## Acknowledgements
+SAB & Katrine

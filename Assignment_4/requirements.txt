@@ -1,5 +1,5 @@
-pandas
-matplotlib
-tensorflow
-tf-keras
-transformers
+matplotlib==3.9.0
+pandas==2.2.2
+transformers==4.41.1
+codecarbon==2.4.2
+setuptools==70.0.0

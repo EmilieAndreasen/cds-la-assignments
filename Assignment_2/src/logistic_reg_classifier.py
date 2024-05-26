@@ -150,7 +150,7 @@ def main():
     save_models(classifier, vectorizer, args.model_dir)
     tracker.stop_task()
 
-    tracker.start_task("predict_and_save_report")
+    tracker.start_task("predict_and_save_report_logreg")
     y_pred = classifier.predict(X_test_features)
     save_report(y_test, y_pred, args.output_dir)
     tracker.stop_task()

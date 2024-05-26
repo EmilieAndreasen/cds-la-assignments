@@ -37,6 +37,10 @@ The folders are structured as follows:
 | ```out```| Contains the outputted plots and emotion analysis |
 | ```src```  | Contains the Python script used for assignment 4 |
 
+## Limitations
+Improved Plot Legends:
+It might be helpful to ensure that the legend and colors are distinct and clear for better readability.
+
 ## Interpretation of outputs
 The emotion analysis of the different scripts from the TV show 'Game of Thrones' gives an insight into the show's emotional profile across its eight seasons.
 
@@ -51,4 +55,4 @@ While these three emotions, along with the 'neutral' one, are consistently shown
 All in all, this analysis indicates that 'Game of Thrones' stays quite consistent in the conveyed emotional profile across seasons. Although it should be noted that the model's predictions are limited to the textual data and lack the nuances and "depth" of human context recognition.  
 
 ## Acknowledgements
-SAB & Katrine
+SAB & Katrine for input on structure of plotting functions

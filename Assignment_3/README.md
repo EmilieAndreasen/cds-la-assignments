@@ -11,7 +11,7 @@ For this assignment, the primary aim was to analyse a corpus of song lyrics (see
 4. Take a specified word and identify the most similar words via word embeddings.
 5. Calculate the percentage of songs by the specified artist that feature these.
 6. Save the results in an "easy-to-understand" way.
-7. Add CodeCarbon functionality to track and measure the environmental impact of the code.  
+7. Add `CodeCarbon` functionality to track and measure the environmental impact of the code.  
 
 ### Repository Structure
 Below is the directory structure of the repository. Make sure to have a similar layout for easy navigation and reproducibility purposes.  
@@ -92,7 +92,7 @@ This script offers valuable insights into the linguistic and thematic content of
 
 Firstly, the script relies on a pretrained word embedding model from `Gensim` (i.e., `glove-wiki-gigaword-50`). While this model is useful for general language patterns, it may not be best choice for analysing song lyrics, which can contain unique vocabulary and various stylistic elements. As such, fine-tuning the model on a corpus of song lyrics could help improve the relevance of the similar words identified for the query expansion.
 
-Another limitation to consider is that the accuracy of the identified similar words is based on general language patterns and may therefore not always align perfectly with the actual thematic content of the songs. This can lead to the inclusion of less relevant words in the query expansion, affecting the accuracy of the analysis. To address this, the preprocessing steps could be improved. For instance, better handling of contractions, slang, and other more poetic language, could enhance the accuracy of the text analysis. Another idea could be to incorporate more context/semantic meaning-aware techniques like BERT (i.e., Bidirectional Encoder Representations from Transformers language model) or GPT (i.e., Generative Pre-trained Transformer language model) for query expansion might also identify more relevant similar words.
+Another limitation to consider is that the accuracy of the identified similar words is based on general language patterns and may therefore not always align perfectly with the actual thematic content of the songs. This can lead to the inclusion of less relevant words in the query expansion, affecting the accuracy of the analysis. To address this the preprocessing steps could be improved. For instance, better handling of contractions, slang, and other more poetic language, could enhance the accuracy of the text analysis. Another idea could be to incorporate more context/semantic meaning-aware techniques like BERT (i.e., Bidirectional Encoder Representations from Transformers language model) or GPT (i.e., Generative Pre-trained Transformer language model) for query expansion might also identify more relevant similar words.
 
 Finally, the current results are saved as text to a text file, which may not be the most optimal format for saving the data. Instead, saving the data to a table, whether in a CSV file or some other format, could help provide a clearer and more intuitive understanding of the results. Additionally, if it is implemented, it can allow for further analyses to be done more effectively.
 

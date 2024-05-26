@@ -1,18 +1,16 @@
 # Assignment 1: Extracting Linguistic Features Using SpaCy
-This repository contains a Python script designed to extract linguistic features from text files in the Uppsala Student English Corpus (USE) using SpaCy. Additional functionality for measuring and extracting environmental impact of the code with CodeCarbon is also present within the script.
+This repository contains a Python script designed to extract linguistic features from text files in the 'Uppsala Student English Corpus' (USE) using `SpaCy`. Additional functionality for measuring and extracting environmental impact of the code with `CodeCarbon` is also present within the script.
 
 More specifically, the repository contains the main Python script, output CSV files for all the data's sub-folders along with a CodeCarbon emission CSV file, and finally, other relevant files for setting up and running the script (for further details, see *Repository structure*).
 
 ### Task Overview
-For this assignment, the primary aim was to analyse a corpus of texts from the USE (see *Data Source*) to determine the relative frequency of certain parts of speech and the occurrence of unique named entities.  
-The code had to be able to do the following:  
+For this assignment, the primary aim was to analyse a corpus of texts from the USE (see *Data Source*) to determine the relative frequency of certain parts of speech and the occurrence of unique named entities. The code had to be able to do the following:  
 1. Loop over each text file contained in the data folder and sub-folders.
 2. Extract the following information:
     - Relative frequency of Nouns, Verbs, Adjectives, and Adverbs per 10,000 words.
     - Total number of unique Persons (PER), Locations (LOC), and Organisations (ORG) entities.
 3. For each sub-folder (e.g., a1, a2, a3, ...), save a table with the extracted information in CSV format.
-4. Add CodeCarbon functionality to track and measure the environmental impact of the code.
-
+4. Add `CodeCarbon` functionality to track and measure the environmental impact of the code.  
 
 ### Repository Structure
 Below is the directory structure of the repository. Make sure to have a similar layout for easy navigation and reproducibility purposes.  
@@ -89,7 +87,7 @@ bash run.sh --dataset_path=./in/USEcorpus --output_dir=./out
 ### Command Line Arguments
 These are the two args that can be passed:  
 **--dataset_path:** Path to the dataset directory containing sub-folders with text files.  
-**--output_dir:** Optional. Directory where the results CSV will be saved, defaults to ../out.  
+**--output_dir:** Directory where the results CSV will be saved, defaults to `../out`.  
 
 ## Summary of Key Points from Outputs
 The outputs for two of the CSV files are presented below to illustrate what the results generally show. The remaining outputs can be viewed in the `out` folder for detailed examination.
@@ -128,9 +126,9 @@ In this CSV, there are also several variations present for the linguistic featur
 Overall, the CSV files do not provide great/deep insights on their own, but the extracted linguistic information does allow for a solid starting point for further future analyses. 
 
 ## Discussion of Limitations and Possible Steps for Improvement  
-This script provides insights into extracting linguistic features from text files using SpaCy. However, certain limitations should be considered to further enhance the model's performance in the future.  
+This script provides insights into extracting linguistic features from text files using `SpaCy`. However, certain limitations should be considered to further enhance the model's performance in the future.  
 
-Firstly, this script relies on SpaCy and its English model (i.e., en_core_web_md), which may not be fully optimised for this specific corpus. This could lead to potential problems or draw-backs when using it. To address this, fine-tuning could be used on the model. Additionally, a NER (i.e., named entity recognition) model could also be used to help improve performance.  
+Firstly, this script relies on `SpaCy` and its English model (i.e., `en_core_web_md`), which may not be fully optimised for this specific corpus. This could lead to potential problems or draw-backs when using it. To address this, fine-tuning could be used on the model. Additionally, a NER (i.e., named entity recognition) model could also be used to help improve performance.  
 
 Another limitation to take into account, is that the script processes files sequentially, which may not be very efficient for larger datasets. This could be fixed by instead implementing parallel processing to reduce computation time and improve efficiency that way.  
 
@@ -139,6 +137,6 @@ Finally, as the current results are not that easily understandable or insightful
 In short, while the current script can extract linguistic features from text files, addressing the above limitations and implementing the suggested improvement strategies could lead to a more robust and better performing script.
 
 ## CarbonCode Tracking
-As mentioned earlier, CodeCarbon has been implemented to measure and extract the environmental impact that the code had while running. A CSV file containing information pertaining to this called 'emissions.csv' is therfore also present in this repository.  
+As mentioned earlier, `CodeCarbon` has been implemented to measure and extract the environmental impact that the code had while running. A CSV file containing information pertaining to this - called 'emissions.csv' - is therfore also present in this repository.  
 
-For a detailed analysis of these results along with results for the other assignments, see Assignment 5.
+For a detailed analysis of these results along with results for the other assignments, see `Assignment 5`.

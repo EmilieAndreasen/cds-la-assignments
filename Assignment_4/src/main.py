@@ -129,6 +129,7 @@ def plot_rel_freq_emotions(data, output_dir):
     
     seasons = data['Season'].unique()
     emotion_labels = data['Emotion_Label'].unique()
+    sorted_emotion_labels = sorted(emotion_labels)
     
     plt.figure(figsize=(10, 6))
     width = 0.8 / len(seasons)
@@ -136,17 +137,13 @@ def plot_rel_freq_emotions(data, output_dir):
     for i, season in enumerate(seasons):
         season_data = data[data['Season'] == season]
         relative_freq = season_data['Emotion_Label'].value_counts(normalize=True)
-        labels = relative_freq.index
-        values = relative_freq.values
-        
-        plt.bar([x + i * width for x in range(len(labels))], values, width=width, align='center', label=f'{season}', alpha=0.8)
+        values = [relative_freq.get(label, 0) for label in sorted_emotion_labels]
+        plt.bar([x + i * width for x in range(len(sorted_emotion_labels))], values, width=width, align='center', label=f'{season}', alpha=0.8)
     
     plt.title('Relative Frequency of Emotion Labels Across All Seasons')
     plt.xlabel('Emotion Label')
     plt.ylabel('Relative Frequency')
-    
-    plt.xticks([r + width * (len(seasons) - 1) / 2 for r in range(len(emotion_labels))], emotion_labels)
-    
+    plt.xticks([r + width * (len(seasons) - 1) / 2 for r in range(len(sorted_emotion_labels))], sorted_emotion_labels)
     plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
     plt.subplots_adjust(right=0.75)
     plt.savefig(os.path.join(output_dir, 'relative_frequency_emotions.png'), bbox_inches='tight')

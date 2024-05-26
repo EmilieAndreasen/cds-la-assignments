@@ -1,7 +1,7 @@
 # Assignment 3: Query Expansion with Word Embeddings
-This repository contains a Python script designed to perform query expansion using word embeddings to analyse different artists' song lyrics. Additionally, it tracks the environmental impact of the code execution using CodeCarbon.
+This repository contains a Python script designed to perform query expansion using word embeddings to analyse different artists' song lyrics. Additional functionality for measuring and extracting environmental impact of the code with `CodeCarbon` is also present within the script.
 
-More specifically, the repository contains the main Python script, output text files along with a CodeCarbon emission CSV file, and finally, other relevant files for setting up and running the script (for further details, see *Repository structure*).
+More specifically, the repository contains the main Python script, output text files along with CodeCarbon emission CSV files, and finally, other relevant files for setting up and running the script (for further details, see *Repository structure*).
 
 ### Task Overview
 For this assignment, the primary aim was to analyse a corpus of song lyrics (see *Data Source*) to determine the percentage of songs by a specific artist that contain a given word or its related words using word embeddings. The code had to be able to do the following:  

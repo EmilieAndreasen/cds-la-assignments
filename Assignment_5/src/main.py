@@ -143,9 +143,9 @@ def plot_task_emissions(task_emissions, output_dir):
     for assignment in task_emissions['assignment'].unique():
         subset = task_emissions[task_emissions['assignment'] == assignment]
         colour = assignment_colours.get(assignment, 'black')
-        bars = plt.bar(subset['task_name'] + f' ({assignment})', subset['emissions'], color=colour, label=assignment)
+        barplot = plt.bar(subset['task_name'] + f' ({assignment})', subset['emissions'], color=colour, label=assignment)
 
-        for bar in bars:
+        for bar in barplot:
             height = bar.get_height()
             plt.text(bar.get_x() + bar.get_width() / 2., height,
                      f'{height / subset["emissions"].sum() * 100:.2f}%',
@@ -166,9 +166,9 @@ def plot_task_emissions(task_emissions, output_dir):
         plt.figure(figsize=(12, 8))
         subset = task_emissions[task_emissions['assignment'] == assignment]
         colour = assignment_colours.get(assignment, 'black')
-        bars = plt.bar(subset['task_name'], subset['emissions'], color=colour, label=assignment)
+        barplot = plt.bar(subset['task_name'], subset['emissions'], color=colour, label=assignment)
 
-        for bar in bars:
+        for bar in barplot:
             height = bar.get_height()
             plt.text(bar.get_x() + bar.get_width() / 2., height,
                      f'{height / subset["emissions"].sum() * 100:.2f}%',

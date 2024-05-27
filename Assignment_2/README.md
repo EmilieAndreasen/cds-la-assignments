@@ -117,9 +117,9 @@ Another point is that in terms of computational efficiency, the scripts process 
 
 Finally, visualisation and interpretability are also key areas for improvement. Adding visualisation tools could provide a better understanding of the models' performance and the underlying data patterns. This would also expand upon the current results and allow for better and more robust interpretations of them.
 
-In short, while the current two scripts provide well-performing approaches to text classification, addressing the above limitations and implementing the suggested improvement strategies could lead to two more robust and better performing scripts.
+In short, while the current two scripts provide well-performing approaches to text classification, addressing the above limitations and implementing the suggested improvement strategies could result in two more robust scripts.
 
-## CarbonCode Tracking
+## CodeCarbon Tracking
 As mentioned earlier, `CodeCarbon` has been implemented to measure and extract the environmental impact that the code had while running. Multiple CSV files containing information pertaining to this are therefore also present in this repository.  
 
 For a detailed analysis of these results along with results for the other assignments, see `Assignment 5`.

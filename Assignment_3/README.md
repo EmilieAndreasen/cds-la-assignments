@@ -98,7 +98,7 @@ Finally, the current results are saved as text to a text file, which may not be 
 
 In short, while the current script provides a solid foundation for linguistic and thematic analysis of song lyrics using query expansion with word embeddings, addressing the mentioned limitations and implementing the suggested improvements would enhance its accuracy, efficiency, and overall robustness.
 
-## CarbonCode Tracking
+## CodeCarbon Tracking
 As mentioned earlier, `CodeCarbon` has been implemented to measure and extract the environmental impact that the code had while running. Multiple CSV files containing information pertaining to this are therefore also present in this repository.  
 
 For a detailed analysis of these results along with results for the other assignments, see `Assignment 5`.

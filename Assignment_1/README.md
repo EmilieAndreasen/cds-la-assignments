@@ -136,7 +136,7 @@ Finally, as the current results are not that easily understandable or insightful
 
 In short, while the current script can extract linguistic features from text files, addressing the above limitations and implementing the suggested improvement strategies could lead to a more robust and better performing script.
 
-## CarbonCode Tracking
+## CodeCarbon Tracking
 As mentioned earlier, `CodeCarbon` has been implemented to measure and extract the environmental impact that the code had while running. A CSV file containing information pertaining to this - called 'emissions.csv' - is therefore also present in this repository.  
 
 For a detailed analysis of these results along with results for the other assignments, see `Assignment 5`.

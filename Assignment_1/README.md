@@ -123,18 +123,18 @@ The text files from the 'Taboo, not taboo' display variation in relative frequen
   
 In this CSV, there are also several variations present for the linguistic features. 0140.c1.txt stands out with a high number of unique persons, namely 38, and a substantial relative frequency of nouns (i.e., 1865.64).  
 
-Overall, the CSV files do not provide great/deep insights on their own, but the extracted linguistic information does allow for a solid starting point for further future analyses. 
+Overall, the CSV files do not provide great/deep insights on their own, but the extracted linguistic information does allow for a solid starting point for future analyses. 
 
 ## Discussion of Limitations and Possible Steps for Improvement  
 This script provides insights into extracting linguistic features from text files using `SpaCy`. However, certain limitations should be considered to further enhance the model's performance in the future.  
 
-Firstly, this script relies on `SpaCy` and its English model (i.e., `en_core_web_md`), which may not be fully optimised for this specific corpus. This could lead to potential problems or draw-backs when using it. To address this, fine-tuning could be used on the model. Additionally, a NER (i.e., named entity recognition) model could also be used to help improve performance.  
+Firstly, this script relies on `SpaCy` and its English model (i.e., `en_core_web_md`), which may not be fully optimised for this specific corpus. This could lead to potential problems or drawbacks when using it. To address this, fine-tuning could be used on the model. Additionally, a NER (i.e., named entity recognition) model could also be used to help improve performance.  
 
-Another limitation to take into account, is that the script processes files sequentially, which may not be very efficient for larger datasets. This could be fixed by instead implementing parallel processing to reduce computation time and improve efficiency that way.  
+Another limitation to take into account is that the script processes files sequentially, which may not be very efficient for larger datasets. This could be fixed by instead implementing parallel processing to reduce computation time and improve efficiency that way.  
 
 Finally, as the current results are not that easily understandable or insightful, adding visualisation tools, such as graphs, could provide a better understanding of the data.  
 
-In short, while the current script can extract linguistic features from text files, addressing the above limitations and implementing the suggested improvement strategies could lead to a more robust and better performing script.
+In short, while the current script can extract linguistic features from text files, addressing the above limitations and implementing the suggested improvement strategies could lead to a more robust and better-performing script.
 
 ## CodeCarbon Tracking
 As mentioned earlier, `CodeCarbon` has been implemented to measure and extract the environmental impact that the code had while running. A CSV file containing information pertaining to this - called 'emissions.csv' - is therefore also present in this repository.  

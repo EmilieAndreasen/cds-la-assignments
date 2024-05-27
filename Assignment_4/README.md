@@ -1,5 +1,5 @@
 # Assignment 4: Emotion Analysis with Pretrained Language Models
-This repository contains a Python script designed to perform emotion analysis on the scripts of the television show 'Game of Thrones' using pretrained language models. Additional functionality for measuring and extracting environmental impact of the code with `CodeCarbon` is also present within the script.
+This repository contains a Python script designed to perform emotion analysis on the scripts of the television show 'Game of Thrones' using pre-trained language models. Additional functionality for measuring and extracting environmental impact of the code with `CodeCarbon` is also present within the script.
 
 More specifically, the repository includes the main Python script, the output CSV file containing the emotion analysis results, various plots along with CodeCarbon emission CSV files, and other relevant files for setting up and running the script (for further details, see *Repository structure*).
 
@@ -39,7 +39,7 @@ Assignment_4/
 ```
 
 ## Data Source
-The data used for this assignment is the scripts from the TV-series Game of Thrones. Specifically, the scripts for every season have been collected into one complete set in the form of a table, split into lines, with metadata such as who spoke each line, which episode that line comes from, and which season that episode belongs to.
+The data used for this assignment is the scripts from the TV series 'Game of Thrones'. Specifically, the scripts for every season have been collected into one complete set in the form of a table, split into lines, with metadata such as who spoke each line, which episode that line comes from, and which season that episode belongs to.
 
 For more details about the data visit the following [website](https://www.kaggle.com/datasets/albenft/game-of-thrones-script-all-seasons?select=Game_of_Thrones_Script.csv). To use the data, simply follow the link, download the dataset, and save it to the `in` folder.
 
@@ -84,9 +84,9 @@ This bar plot shows the frequency of each emotion label across all seasons, wher
 Overall, this analysis indicates that 'Game of Thrones' stays quite consistent in the conveyed emotional profile across seasons.
 
 ## Discussion of Limitations and Possible Steps for Improvement  
-This script provides insights into the emotional profile of 'Game of Thrones' across its seasons using a pretrained language model. However, certain limitations should be considered to further enhance the analysis.
+This script provides insights into the emotional profile of 'Game of Thrones' across its seasons using a pre-trained language model. However, certain limitations should be considered to further enhance the analysis.
 
-First of all, it should be noted that the model's predictions are limited to the textual data and lack the nuances and "depth" of human context recognition. For instance, within the dataset are lines that could arguably be viewed as conveying an emotion, which the model simply classifies as 'neutral'. A specific example can be seen in 'Emotion_Analysis_Output.csv' line 2065: "The lion's not his sigil, idiot. He's a stag, like his father.", neutral. This line, in context of the scene, could instead be seen as the character (i.e., Arya Stark) showing *anger* or frustration towards her sister (i.e., Sansa Stark), but it is classified as 'neutral'. This may suggest that the language model (i.e., `j-hartmann/emotion-english-distilroberta-base`) is not "sensitive" enough, or, more likely, that because it cannot process the context of scenes as a whole it struggles to accurately classify all lines. To address this implementations of methods to provide the model with more context, such as including the previous and next lines of dialogue, could help improve the classification of emotions.
+First of all, it should be noted that the model's predictions are limited to the textual data and lack the nuances and "depth" of human context recognition. For instance, within the dataset are lines that could arguably be viewed as conveying an emotion, which the model simply classifies as 'neutral'. A specific example can be seen in 'Emotion_Analysis_Output.csv' line 2065: "The lion's not his sigil, idiot. He's a stag, like his father.", neutral. This line, in the context of the scene, could instead be seen as the character (i.e., Arya Stark) showing *anger* or frustration towards her sister (i.e., Sansa Stark), but it is classified as 'neutral'. This may suggest that the language model (i.e., `j-hartmann/emotion-english-distilroberta-base`) is not "sensitive" enough, or, more likely, that because it cannot process the context of scenes as a whole it struggles to accurately classify all lines. To address this implementations of methods to provide the model with more context, such as including the previous and next lines of dialogue, could help improve the classification of emotions.
 
 Another limitation is that the script processes lines sequentially, which may not be efficient for larger datasets, such as the one used for this assignment. Implementing parallel processing could therefore reduce computation time and speed up the analysis.
 

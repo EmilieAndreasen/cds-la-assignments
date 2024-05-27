@@ -42,7 +42,7 @@ Assignment_2/
 ```
 
 ## Data Source
-The data used for this assignment is a collection of news that have been organised into structured text data. Accompanying each news media is a label indicating it as either 'FAKE' or 'REAL'.
+The data used for this assignment is a collection of news that has been organised into structured text data. Accompanying each news media is a label indicating it as either 'FAKE' or 'REAL'.
 
 For more details about the data visit the following [website](https://www.kaggle.com/datasets/jillanisofttech/fake-or-real-news). To use the data, simply follow the link, download the dataset, and save it to the `in` folder.
 

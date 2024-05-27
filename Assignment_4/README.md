@@ -74,12 +74,12 @@ The outputs for the emotion analysis are presented below.
 **Distribution of Emotions per Season:**  
 ![Emotion Distribution per Season](./out/emotions_seasons.png)  
 
-The bar plot displays the frequency of each emotion label for each season, where the 'neutral' emotion is the most prevelant one in each season by a notable amount. This result could suggest that much of the dialogue does not convey pronounced emotion. An instance of such a case can be seen in 'Emotion_Analysis_Output.csv' line 4555: "My name is Daenerys-", neutral. Notably, 'anger', 'surprise', and 'disgust' are also prevelant throughout the different seasons. While these three emotions, along with the 'neutral' one, are consistently shown as the top four, the last three emotions do vary from season to season.
+The bar plot displays the frequency of each emotion label for each season, where the 'neutral' emotion is the most prevalent one in each season by a notable amount. This result could suggest that much of the dialogue does not convey pronounced emotion. An instance of such a case can be seen in 'Emotion_Analysis_Output.csv' line 4555: "My name is Daenerys-", neutral. Notably, 'anger', 'surprise', and 'disgust' are also prevalent throughout the different seasons. While these three emotions, along with the 'neutral' one, are consistently shown as the top four, the last three emotions do vary from season to season.
 
 **Relative Frequency of Emotions Across Seasons:**  
 ![Relative Frequency of Emotions Across Seasons](./out/relative_frequency_emotions.png)
 
-This bar plot shows the frequency of each emotion label across all seasons, where the 'neutral' emotion can again be seen to be the most prevelant emotion. Moreover, 'anger', 'surprise', and 'disgust' are again among the other most frequent emotions across seasons. However, all emotions vary in frequency across the seasons, with such changes perhaps correlating to the different plot events and changing tone settings.  
+This bar plot shows the frequency of each emotion label across all seasons, where the 'neutral' emotion can again be seen to be the most prevalent emotion. Moreover, 'anger', 'surprise', and 'disgust' are again among the other most frequent emotions across seasons. However, all emotions vary in frequency across the seasons, with such changes perhaps correlating to the different plot events and changing tone settings.  
 
 Overall, this analysis indicates that 'Game of Thrones' stays quite consistent in the conveyed emotional profile across seasons.
 

@@ -33,7 +33,7 @@ Assignment_2/
 │
 ├── src/
 │   ├── logistic_reg_classifier.py
-│   ├── neural_network.py
+│   ├── neural_network_classifier.py
 │
 ├── README.md
 ├── requirements.txt

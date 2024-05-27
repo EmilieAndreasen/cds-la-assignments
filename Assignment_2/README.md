@@ -120,6 +120,6 @@ Finally, visualisation and interpretability are also key areas for improvement. 
 In short, while the current two scripts provide well-performing approaches to text classification, addressing the above limitations and implementing the suggested improvement strategies could lead to two more robust and better performing scripts.
 
 ## CarbonCode Tracking
-As mentioned earlier, `CodeCarbon` has been implemented to measure and extract the environmental impact that the code had while running. Multiple CSV files containing information pertaining to this are therfore also present in this repository.  
+As mentioned earlier, `CodeCarbon` has been implemented to measure and extract the environmental impact that the code had while running. Multiple CSV files containing information pertaining to this are therefore also present in this repository.  
 
 For a detailed analysis of these results along with results for the other assignments, see `Assignment 5`.

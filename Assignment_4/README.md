@@ -1,7 +1,7 @@
 # Assignment 4: Emotion Analysis with Pretrained Language Models
 This repository contains a Python script designed to perform emotion analysis on the scripts of the television show 'Game of Thrones' using pretrained language models. Additional functionality for measuring and extracting environmental impact of the code with `CodeCarbon` is also present within the script.
 
-The repository includes the main Python script, the output CSV file containing the emotion analysis results, various plots along with CodeCarbon emission CSV files, and other relevant files for setting up and running the script (for further details, see *Repository structure*).
+More specifically, the repository includes the main Python script, the output CSV file containing the emotion analysis results, various plots along with CodeCarbon emission CSV files, and other relevant files for setting up and running the script (for further details, see *Repository structure*).
 
 ### Task Overview
 For this assignment, the primary aim was to analyse the Game of Thrones scripts (see *Data Source*) to determine the emotional profile across its seasons. The code had to be able to do the following:  
@@ -93,7 +93,7 @@ Another limitation is that the script processes lines sequentially, which may no
 In short, while the current script effectively extracts and visualises the emotional profile of the 'Game of Thrones' scripts, addressing these limitations and implementing suggested improvements could lead to a more robust and insightful analysis.
 
 ## CarbonCode Tracking
-As mentioned earlier, `CodeCarbon` has been implemented to measure and extract the environmental impact that the code had while running. Multiple CSV files containing information pertaining to this are therfore also present in this repository.  
+As mentioned earlier, `CodeCarbon` has been implemented to measure and extract the environmental impact that the code had while running. Multiple CSV files containing information pertaining to this are therefore also present in this repository.  
 
 For a detailed analysis of these results along with results for the other assignments, see `Assignment 5`.
 

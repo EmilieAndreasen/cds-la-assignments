@@ -70,7 +70,7 @@ bash run.sh --dataset_path=./in --output_dir=./out
 
 ### Command Line Arguments
 These are the arguments that can be passed:  
-***--dataset_path:** Path to the directory containing the CSV files.  
+**--dataset_path:** Path to the directory containing the CSV files.  
 **--output_dir:** Directory where the plots will be saved, defaults to `../out`.   
 
 ## Summary of Key Points from Outputs
